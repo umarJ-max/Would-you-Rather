@@ -217,7 +217,7 @@ const questions = [
     { question: "Would you rather be able to control your voltage or control your amperage?", optionA: "Control voltage", optionB: "Control amperage" },
     { question: "Would you rather have a magic battery that never runs out or magic solar panel that works anywhere?", optionA: "Magic battery", optionB: "Magic solar panel" },
     { question: "Would you rather be able to make anyone energetic or make anyone grounded?", optionA: "Make anyone energetic", optionB: "Make anyone grounded" }
-];}
+];
 
 let currentQuestionIndex = 0;
 let answeredCount = 0;
