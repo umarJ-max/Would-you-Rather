@@ -53,7 +53,6 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
-let score = 0;
 let answeredCount = 0;
 let selectedOption = null;
 
@@ -88,11 +87,9 @@ function selectOption(option) {
 
 function nextQuestion() {
     if (selectedOption) {
-        score += 10;
         answeredCount++;
         
         // Update display
-        document.getElementById('score').textContent = score;
         document.getElementById('answered-count').textContent = answeredCount;
         
         // Move to next question
@@ -102,7 +99,7 @@ function nextQuestion() {
             loadQuestion();
         } else {
             // Game finished
-            alert(`Game Complete! You answered all ${questions.length} questions. Final Score: ${score}`);
+            alert(`Game Complete! You answered all ${questions.length} questions.`);
             restartGame();
         }
     }
@@ -110,11 +107,9 @@ function nextQuestion() {
 
 function restartGame() {
     currentQuestionIndex = 0;
-    score = 0;
     answeredCount = 0;
     selectedOption = null;
     
-    document.getElementById('score').textContent = score;
     document.getElementById('answered-count').textContent = answeredCount;
     
     loadQuestion();
