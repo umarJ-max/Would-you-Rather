@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Rather Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Would You Rather?</h1>
+            <div class="score">Score: <span id="score">0</span></div>
+        </header>
+        
+        <div class="game-area">
+            <div class="question-counter">
+                Question <span id="current-question">1</span> of <span id="total-questions">50</span>
+            </div>
+            
+            <div class="question-container">
+                <h2 id="question-text">Loading question...</h2>
+                
+                <div class="options">
+                    <button class="option-btn" id="option-a" onclick="selectOption('a')">
+                        <span class="option-letter">A</span>
+                        <span class="option-text" id="option-a-text">Option A</span>
+                    </button>
+                    
+                    <button class="option-btn" id="option-b" onclick="selectOption('b')">
+                        <span class="option-letter">B</span>
+                        <span class="option-text" id="option-b-text">Option B</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+                <button id="restart-btn" onclick="restartGame()">Restart Game</button>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-label">Questions Answered:</span>
+                <span id="answered-count">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
