@@ -14,8 +14,28 @@
         </header>
         
         <div class="game-area">
-            <div class="question-counter">
-                Question <span id="current-question">1</span> of <span id="total-questions">50</span>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="question-counter">
+                    Question <span id="current-question">1</span> of <span id="total-questions">50</span>
+                </div>
+            </div>
+            
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-icon">🔥</span>
+                    <span>Streak: <span id="streak-count">0</span></span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">⭐</span>
+                    <span>Score: <span id="score">0</span></span>
+                </div>
+                <div class="stat-item timer-section" id="timer-section" style="display: none;">
+                    <span class="stat-icon">⏱️</span>
+                    <span>Time: <span id="timer">10</span>s</span>
+                </div>
             </div>
             
             <div class="question-container">
@@ -34,9 +54,14 @@
                 </div>
             </div>
             
+            <div class="choice-feedback" id="choice-feedback" style="display: none;">
+                <div class="feedback-text" id="feedback-text"></div>
+            </div>
+            
             <div class="controls">
                 <button id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
-                <button id="restart-btn" onclick="restartGame()">Restart Game</button>
+                <button id="timer-mode-btn" onclick="toggleTimerMode()">⏱️ Timer Mode</button>
+                <button id="restart-btn" onclick="restartGame()">🔄 Restart</button>
             </div>
         </div>
         
@@ -44,6 +69,18 @@
             <div class="stat">
                 <span class="stat-label">Questions Answered:</span>
                 <span id="answered-count">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Best Streak:</span>
+                <span id="best-streak">0</span>
+            </div>
+        </div>
+        
+        <!-- Celebration overlay -->
+        <div class="celebration" id="celebration" style="display: none;">
+            <div class="celebration-content">
+                <div class="celebration-emoji">🎉</div>
+                <div class="celebration-text" id="celebration-text"></div>
             </div>
         </div>
     </div>
