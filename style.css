@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ffa726 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ header {
 }
 
 .brand-name {
-    color: #667eea;
+    color: #ff6b6b;
     font-weight: bold;
     font-size: 1.1em;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -53,7 +53,7 @@ h1 {
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     letter-spacing: -1px;
     margin: 10px 0;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #ff6b6b, #ffa726);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -164,10 +164,10 @@ h1 {
 }
 
 .option-btn:hover {
-    border-color: #667eea;
+    border-color: #ff6b6b;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background: linear-gradient(135deg, #ffffff, #f8f9ff);
+    background: linear-gradient(135deg, #ffffff, #fff8f8);
 }
 
 .option-btn.selected {
@@ -183,7 +183,7 @@ h1 {
 }
 
 .option-letter {
-    background: #667eea;
+    background: #ff6b6b;
     color: white;
     width: 40px;
     height: 40px;
@@ -226,16 +226,16 @@ button {
 }
 
 .choice-feedback {
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 20px;
     text-align: center;
-    border-left: 4px solid #2196F3;
+    border-left: 4px solid #ffa726;
 }
 
 .feedback-text {
-    color: #1565c0;
+    color: #e65100;
     font-weight: 500;
     font-style: italic;
 }
@@ -259,7 +259,7 @@ button {
 }
 
 #timer-mode-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #ff6b6b, #ffa726);
     color: white;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -267,20 +267,20 @@ button {
 
 #timer-mode-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-}
-
-#restart-btn {
-    background: linear-gradient(135deg, #ff6b6b, #ff5252);
-    color: white;
-    font-weight: 600;
     box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
 
+#restart-btn {
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+}
+
 #restart-btn:hover {
-    background: linear-gradient(135deg, #ff5252, #f44336);
+    background: linear-gradient(135deg, #8e24aa, #5e35b1);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 6px 16px rgba(156, 39, 176, 0.4);
 }
 
 .celebration {
@@ -316,7 +316,7 @@ button {
     font-size: 1.5em;
     font-weight: bold;
     color: #2c3e50;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #ff6b6b, #ffa726);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
